@@ -1,5 +1,28 @@
 # RESUMEN DEL PROYECTO - CHATBOT LOUIS LE RATÉ
-## Fecha: 13 de marzo de 2024
+## Última actualización: 13 de marzo de 2024
+
+---
+
+## ✅ CARACTERÍSTICAS DEL CHATBOT:
+
+### ⏱️ DELAY DE 2 HORAS:
+- El bot NO responde inmediatamente
+- Espera **2 horas** antes de responder
+- **Parece que eres TÚ respondiendo**, no un robot
+- Los fans no saben que es automático
+
+### 🎬 ANÁLISIS DE VIDEOS:
+- El bot **lee el contenido del video** donde el fan comentó
+- Entiende **de qué trata el video**
+- Analiza **por qué el fan escribió ese comentario**
+- Genera respuesta **contextualizada** basada en el video
+
+### 🤖 INTELIGENCIA ARTIFICIAL:
+- Respuestas en **francés coloquial** (argot de la calle)
+- Personalidad de **comediante gracioso y sarcástico**
+- Memoria de cada fan (nombre, veces que ha escrito)
+- Respuestas **variadas**, nunca iguales
+- Suena **humano**, no robot
 
 ---
 
@@ -21,63 +44,80 @@
 
 ---
 
-## ✅ FACEBOOK DEVELOPERS - CONFIGURACIÓN COMPLETADA:
+## ✅ FACEBOOK DEVELOPERS - CONFIGURACIÓN:
 
-- Icono de la app: Subido (comediante francés)
-- Categoría: Entretenimiento
-- Dominios: chatbot-louis.vercel.app
-- URL Política de privacidad: https://github.com/josevict123/chatbot-louis/blob/main/PRIVACY.md
-- URL Eliminación de datos: https://github.com/josevict123/chatbot-louis/blob/main/DELETE-DATA.md
-- Email de contacto: josevictoredondo@hotmail.com
-
----
-
-## ✅ WEBHOOK FUNCIONANDO:
-
-- URL temporal: https://earnings-charleston-semi-bizarre.trycloudflare.com/api/webhook/facebook
-- El webhook está verificado y suscrito en Facebook
-- Se probó respondiendo a Joseph Fernandez correctamente
+- Icono de la app: ✅ Subido
+- Categoría: ✅ Entretenimiento
+- Dominios: ✅ chatbot-louis.vercel.app
+- URL Política de privacidad: ✅ Configurada
+- URL Eliminación de datos: ✅ Configurada
+- Email de contacto: ✅ josevictoredondo@hotmail.com
 
 ---
 
-## ✅ ARCHIVOS EN GITHUB:
+## ❌ PENDIENTE:
 
-- Repositorio: https://github.com/josevict123/chatbot-louis
-- Webhook: src/app/api/webhook/facebook/route.ts
-- Panel: src/app/page.tsx
+### SOLICITUD DE REVISIÓN EN FACEBOOK:
+1. Ir a: developers.facebook.com/apps/25872197969145859/app-review/
+2. Buscar **"pages_manage_engagement"** 
+3. Pulsar "Empezar"
+4. Llenar la descripción:
+
+```
+Mi app responde automáticamente a los comentarios que los fans dejan en mis videos de comedia en Facebook.
+
+¿Cómo funciona?
+1. Un fan ve uno de mis videos y deja un comentario
+2. Mi app detecta el comentario automáticamente
+3. La app analiza el contenido del video para entender el contexto
+4. Genera una respuesta personalizada en francés
+5. Publica la respuesta como comentario
+
+Esto me permite interactuar con los 300-400 fans que comentan diariamente en mis videos, dándoles respuestas personalizadas cuando no puedo estar conectado.
+
+El permiso pages_manage_engagement es necesario para poder leer los comentarios y responder automáticamente.
+```
+
+5. Subir captura de pantalla de la página
+6. Enviar solicitud
+7. Esperar 1-3 días para aprobación
 
 ---
 
-## ❌ PROBLEMAS PENDIENTES:
+## ⚠️ PROBLEMA CON VERCEL:
 
-1. **VERCEL NO SIRVE EL PROYECTO**: La URL chatbot-louis.vercel.app da error 404. El webhook funciona solo con el túnel cloudflare temporal.
-
-2. **SOLICITUD DE REVISIÓN NO ENVIADA**: Facebook requiere aprobación manual. Hay que ir a:
-   - developers.facebook.com/apps/25872197969145859/app-review/
-   - Pulsar "Solicita" para pages_messaging
-   - Esperar 1-3 días hábiles
-
----
-
-## 🎯 PRÓXIMOS PASOS:
-
-1. Arreglar Vercel (revisar configuración de Next.js)
-2. Enviar solicitud de revisión en Facebook Developers
-3. Esperar aprobación de Facebook
-
----
-
-## 📝 NOTAS:
-
-- El usuario lleva 4 días intentando esto
-- Las credenciales y configuración están listas
-- Solo falta que Facebook apruebe la app
-- El bot responde correctamente cuando se le envían mensajes manualmente
+La URL chatbot-louis.vercel.app da error 404.
+**Solución temporal**: Usar túnel cloudflare mientras se arregla.
 
 ---
 
 ## 🔗 ENLACES IMPORTANTES:
 
-- Facebook Developers: https://developers.facebook.com/apps/25872197969145859
-- GitHub: https://github.com/josevict123/chatbot-louis
-- Vercel: https://vercel.com
+- **Facebook Developers**: https://developers.facebook.com/apps/25872197969145859
+- **GitHub**: https://github.com/josevict123/chatbot-louis
+- **Vercel**: https://vercel.com
+
+---
+
+## 📝 CÓMO FUNCIONA EL BOT:
+
+1. Fan ve un video → Deja un comentario
+2. Facebook envía el comentario al webhook (después de 2 horas)
+3. El bot analiza:
+   - Qué dice el comentario
+   - De qué trata el video
+   - Quién es el fan (si ya ha escrito antes)
+4. Genera respuesta en francés con personalidad de comediante
+5. Publica la respuesta automáticamente
+6. El fan recibe notificación de respuesta
+
+---
+
+## 🎭 PERSONALIDAD DEL BOT:
+
+- Comediante francés gracioso y sarcástico
+- Usa argot francés coloquial
+- Respuestas cortas pero cálidas (1-3 oraciones)
+- Agradece sin ser repetitivo
+- Conecta con el contenido del video
+- **Parece una persona real, no un robot**
